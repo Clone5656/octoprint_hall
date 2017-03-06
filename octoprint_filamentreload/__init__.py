@@ -73,22 +73,22 @@ class FilamentReloadedPlugin(octoprint.plugin.StartupPlugin,
     def get_update_information(self):
         return dict(
             octoprint_filament=dict(
-                displayName="Filament Sensor Reloaded",
+                displayName="Hall Sensor",
                 displayVersion=self._plugin_version,
 
                 # version check: github repository
                 type="github_release",
-                user="kontakt",
-                repo="Octoprint-Filament-Reloaded",
+                user="Clone5656",
+                repo="Hall Sensor",
                 current=self._plugin_version,
 
                 # update method: pip
-                pip="https://github.com/kontakt/Octoprint-Filament-Reloaded/archive/{target_version}.zip"
+                pip="https://github.com/Clone5656/octoprint_hall"
             )
         )
 
-__plugin_name__ = "Filament Sensor Reloaded"
-__plugin_version__ = "1.0.1"
+__plugin_name__ = "Hall Sensor"
+__plugin_version__ = "1.0.0"
 
 def __plugin_load__():
     global __plugin_implementation__
